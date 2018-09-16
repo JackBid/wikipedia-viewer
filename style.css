@@ -1,0 +1,91 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  font-size: 1.2em;
+  background: #222;
+}
+#container{
+  width: 100%
+  margin: auto;
+  text-align: center;
+}
+#header{
+  width: 55%;
+  margin: auto;
+  padding: 10px;
+  background-color: #222;
+}
+#header input{
+  margin: 0px;
+  width: 230px;
+  height: 30px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  font-size: 1.1em;
+  text-align: center;
+}
+#header button{
+  width: 100px;
+  height: 35px;
+  border: 1px solid #23CF5F;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 1.1em;
+  background-color: #23CF5F;
+}
+#header input:focus, #header button:focus{
+  outline: none;
+}
+#header button:hover{
+  border: 1px solid #2dab59;
+  background-color: #2dab59;
+  color: #bbb;
+}
+.list{
+  width: 55%;
+  margin: auto;
+  margin-top: 5px;
+  border-top: 1px solid #333;
+}
+.placeholder{
+  color: #fff;
+  margin-top: 200px;
+}
+.element{
+  margin: auto;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+.element a h3, .element a  p{
+  display: inline;
+}
+.element a h3{
+  padding-right: 40px;
+  font-size: 1em;
+}
+.element a p{
+  color: #bbb;
+  font-size: 0.8em;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+.element:hover{
+  background-color: #333;
+}
+@media (max-width: 1000px) {
+  body { font-size: 1em; }
+  .list { width: 70%;}
+  #header input {width: 180px; height: 25px;}
+  #header button {width: 80px; height: 30px;}
+}
+@media (max-width: 500px) {
+  body { font-size: 0.9em; }
+  .list {width: 90%; }
+  #header input {width: 140px; height: 20px; margin: 5px;}
+  #header button {width: 60px; height: 25px;}
+}
